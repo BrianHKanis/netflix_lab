@@ -12,7 +12,7 @@ def test_user_has_name():
 def test_user_is_added_to_store():
     store = build_store()
     user = User(store, name = 'Bob Smith')
-    assert store['users'][1] == user
+    assert store['users'][0] == user
 
 def test_user_has_an_id():
     store = build_store()

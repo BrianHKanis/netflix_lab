@@ -27,8 +27,8 @@ def test_script_words_removes_empty_strings_and_just_new_lines():
         script = file.read()
     episode = Episode(store, title = 'Good news bad news')
     episode.script = script
-    assert episode.words()[:20] == ['GOOD', 'NEWS,', 'BAD', 'NEWS\n\n\n\n', 'Written', 'by\n\n', 'Larry',
-     'David', '&', 'Jerry', 'Seinfeld\n\n\n\n\n', '(Comedy', 'club)\n\n', 'JERRY\n', 'You', 'know,', 'why', "we're", 'here?', 'To']
+    assert episode.words()[:20] == ['GOOD', 'NEWS,', 'BAD', 'NEWS', 'Written', 'by', 'Larry',
+     'David', '&', 'Jerry', 'Seinfeld', '(Comedy', 'club)', 'JERRY', 'You', 'know,', 'why', "we're", 'here?', 'To']
 
 
 def test_episode_viewings():
